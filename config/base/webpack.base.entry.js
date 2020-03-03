@@ -115,6 +115,7 @@ const init = (config, iEnv) => {
 
       if (iChunkName) {
         const opts = {
+          mode: iEnv.mode || 'master',
           template: iPath,
           filename: path.relative(
             config.alias.jsDest,
